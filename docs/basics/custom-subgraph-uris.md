@@ -6,8 +6,8 @@ Keep in mind though that you can only use custom URIs if not using the default e
 ```ts
 import { http, createClient } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts } from '@ensdomains/ensjs'
-import { getSubgraphRecords } from '@ensdomains/ensjs/subgraph'
+import { addEnsContracts } from '@folktizen/netzjs'
+import { getSubgraphRecords } from '@folktizen/netzjs/subgraph'
 
 const mainnetWithEns = addEnsContracts(mainnet)
 

@@ -12,10 +12,10 @@ The ultimate ENS javascript library, with [viem](https://github.com/wagmi-dev/vi
 
 ## Installation
 
-Install @ensdomains/ensjs, alongside [viem](https://github.com/wagmi-dev/viem).
+Install @folktizen/netzjs, alongside [viem](https://github.com/wagmi-dev/viem).
 
 ```sh
-npm install @ensdomains/ensjs viem
+npm install @folktizen/netzjs viem
 ```
 
 ## Getting Started
@@ -28,7 +28,7 @@ as well as all subgraph functions.
 // Import viem transport, viem chain, and ENSjs
 import { http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { createEnsPublicClient } from '@ensdomains/ensjs'
+import { createEnsPublicClient } from '@folktizen/netzjs'
 
 // Create the client
 const client = createEnsPublicClient({

@@ -1,4 +1,4 @@
-[**@ensdomains/ensjs**](../README.md)
+[**@folktizen/netzjs**](../README.md)
 
 ---
 
@@ -15,8 +15,8 @@ Sets multiple records for a name on a resolver.
 ```ts
 import { createWalletClient, custom } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts } from '@ensdomains/ensjs'
-import { setRecords } from '@ensdomains/ensjs/wallet'
+import { addEnsContracts } from '@folktizen/netzjs'
+import { setRecords } from '@folktizen/netzjs/wallet'
 
 const wallet = createWalletClient({
   chain: addEnsContracts(mainnet),

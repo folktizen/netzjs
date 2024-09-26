@@ -1,4 +1,4 @@
-[**@ensdomains/ensjs**](../README.md)
+[**@folktizen/netzjs**](../README.md)
 
 ---
 
@@ -15,8 +15,8 @@ Gets the wrapper data for a name.
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts } from '@ensdomains/ensjs'
-import { getWrapperData } from '@ensdomains/ensjs/public'
+import { addEnsContracts } from '@folktizen/netzjs'
+import { getWrapperData } from '@folktizen/netzjs/public'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),

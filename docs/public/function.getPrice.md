@@ -1,4 +1,4 @@
-[**@ensdomains/ensjs**](../README.md)
+[**@folktizen/netzjs**](../README.md)
 
 ---
 
@@ -15,8 +15,8 @@ Gets the price of a name, or array of names, for a given duration.
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts } from '@ensdomains/ensjs'
-import { getPrice } from '@ensdomains/ensjs/public'
+import { addEnsContracts } from '@folktizen/netzjs'
+import { getPrice } from '@folktizen/netzjs/public'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -55,8 +55,8 @@ Gets the price of a name, or array of names, for a given duration.
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts } from '@ensdomains/ensjs'
-import { getPrice } from '@ensdomains/ensjs/public'
+import { addEnsContracts } from '@folktizen/netzjs'
+import { getPrice } from '@folktizen/netzjs/public'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),

@@ -1,4 +1,4 @@
-[**@ensdomains/ensjs**](../README.md)
+[**@folktizen/netzjs**](../README.md)
 
 ---
 
@@ -13,7 +13,7 @@ Gets the DNS owner of a name, via DNS record lookup
 ## Example
 
 ```ts
-import { getDnsOwner } from '@ensdomains/ensjs/dns'
+import { getDnsOwner } from '@folktizen/netzjs/dns'
 
 const owner = await getDnsOwner({ name: 'ens.domains' })
 // '0xb8c2C29ee19D8307cb7255e1Cd9CbDE883A267d5'

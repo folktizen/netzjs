@@ -1,4 +1,4 @@
-[**@ensdomains/ensjs**](../README.md)
+[**@folktizen/netzjs**](../README.md)
 
 ---
 
@@ -15,7 +15,7 @@ Extends the viem client with ENS wallet actions
 ```ts
 import { createWalletClient, custom } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensWalletActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensWalletActions } from '@folktizen/netzjs'
 
 const clientWithEns = createWalletClient({
   chain: addEnsContracts(mainnet),

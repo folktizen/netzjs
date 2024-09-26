@@ -1,4 +1,4 @@
-[**@ensdomains/ensjs**](../README.md)
+[**@folktizen/netzjs**](../README.md)
 
 ---
 
@@ -15,7 +15,7 @@ Adds ENS contract addresses to the viem chain
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts } from '@ensdomains/ensjs'
+import { addEnsContracts } from '@folktizen/netzjs'
 
 const clientWithEns = createPublicClient({
   chain: addEnsContracts(mainnet),

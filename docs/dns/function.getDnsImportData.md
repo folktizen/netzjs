@@ -1,4 +1,4 @@
-[**@ensdomains/ensjs**](../README.md)
+[**@folktizen/netzjs**](../README.md)
 
 ---
 
@@ -15,8 +15,8 @@ Gets DNS import data, used for `importDnsName()`
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts } from '@ensdomains/ensjs'
-import { getDnsImportData } from '@ensdomains/ensjs/dns'
+import { addEnsContracts } from '@folktizen/netzjs'
+import { getDnsImportData } from '@folktizen/netzjs/dns'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),

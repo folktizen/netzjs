@@ -1,4 +1,4 @@
-[**@ensdomains/ensjs**](../README.md)
+[**@folktizen/netzjs**](../README.md)
 
 ---
 
@@ -15,12 +15,12 @@ Batches multiple read functions into a single call.
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts } from '@ensdomains/ensjs'
+import { addEnsContracts } from '@folktizen/netzjs'
 import {
   batch,
   getTextRecord,
   getAddressRecord,
-} from '@ensdomains/ensjs/public'
+} from '@folktizen/netzjs/public'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -66,12 +66,12 @@ Batches multiple read functions into a single call.
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts } from '@ensdomains/ensjs'
+import { addEnsContracts } from '@folktizen/netzjs'
 import {
   batch,
   getTextRecord,
   getAddressRecord,
-} from '@ensdomains/ensjs/public'
+} from '@folktizen/netzjs/public'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),

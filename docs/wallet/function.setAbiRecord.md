@@ -1,4 +1,4 @@
-[**@ensdomains/ensjs**](../README.md)
+[**@folktizen/netzjs**](../README.md)
 
 ---
 
@@ -16,9 +16,9 @@ Sets the ABI for a name on a resolver.
 import abi from './abi.json'
 import { createWalletClient, custom } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts } from '@ensdomains/ensjs'
-import { encodeAbi } from '@ensdomains/ensjs/utils'
-import { setAbiRecord } from '@ensdomains/ensjs/wallet'
+import { addEnsContracts } from '@folktizen/netzjs'
+import { encodeAbi } from '@folktizen/netzjs/utils'
+import { setAbiRecord } from '@folktizen/netzjs/wallet'
 
 const wallet = createWalletClient({
   chain: addEnsContracts(mainnet),

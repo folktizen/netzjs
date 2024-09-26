@@ -6,8 +6,8 @@ Just wrap the viem `Chain` in the `addEnsContracts()` function, which adds all t
 ```ts
 import { http, createClient } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts } from '@ensdomains/ensjs'
-import { getAddressRecord } from '@ensdomains/ensjs/public'
+import { addEnsContracts } from '@folktizen/netzjs'
+import { getAddressRecord } from '@folktizen/netzjs/public'
 
 const client = createClient({
   chain: addEnsContracts(mainnet),

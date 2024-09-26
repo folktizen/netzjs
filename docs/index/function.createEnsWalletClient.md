@@ -1,4 +1,4 @@
-[**@ensdomains/ensjs**](../README.md)
+[**@folktizen/netzjs**](../README.md)
 
 ---
 
@@ -15,7 +15,7 @@ Creates an ENS Wallet Client with a given [Transport](https://viem.sh/docs/clien
 ```ts
 import { custom } from 'viem'
 import { mainnet } from 'viem/chains'
-import { createEnsWalletClient } from '@ensdomains/ensjs'
+import { createEnsWalletClient } from '@folktizen/netzjs'
 
 const client = createEnsWalletClient({
   chain: mainnet,
@@ -52,7 +52,7 @@ Clears the records for a name on a resolver.
 ```ts
 import { createWalletClient, custom } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensWalletActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensWalletActions } from '@folktizen/netzjs'
 
 const wallet = createWalletClient({
   chain: addEnsContracts(mainnet),
@@ -88,8 +88,8 @@ Commits a name to be registered
 ```ts
 import { createWalletClient, custom } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensWalletActions } from '@ensdomains/ensjs'
-import { randomSecret } from '@ensdomains/ensjs/utils'
+import { addEnsContracts, ensWalletActions } from '@folktizen/netzjs'
+import { randomSecret } from '@folktizen/netzjs/utils'
 
 const wallet = createWalletClient({
   chain: addEnsContracts(mainnet),
@@ -128,7 +128,7 @@ Creates a subname
 ```ts
 import { createWalletClient, custom } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensWalletActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensWalletActions } from '@folktizen/netzjs'
 
 const wallet = createWalletClient({
   chain: addEnsContracts(mainnet),
@@ -165,7 +165,7 @@ Deletes a subname
 ```ts
 import { createWalletClient, custom } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensWalletActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensWalletActions } from '@folktizen/netzjs'
 
 const wallet = createWalletClient({
   chain: addEnsContracts(mainnet),
@@ -205,8 +205,8 @@ import {
   addEnsContracts,
   ensPublicActions,
   ensWalletActions,
-} from '@ensdomains/ensjs'
-import { randomSecret } from '@ensdomains/ensjs/utils'
+} from '@folktizen/netzjs'
+import { randomSecret } from '@folktizen/netzjs/utils'
 
 const mainnetWithEns = addEnsContracts(mainnet)
 const client = createPublicClient({
@@ -265,7 +265,7 @@ import {
   addEnsContracts,
   ensPublicActions,
   ensWalletActions,
-} from '@ensdomains/ensjs'
+} from '@folktizen/netzjs'
 
 const mainnetWithEns = addEnsContracts(mainnet)
 const client = createPublicClient({
@@ -315,8 +315,8 @@ Sets the ABI for a name on a resolver.
 import abi from './abi.json'
 import { createWalletClient, custom } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensWalletActions } from '@ensdomains/ensjs'
-import { encodeAbi } from '@ensdomains/ensjs/utils'
+import { addEnsContracts, ensWalletActions } from '@folktizen/netzjs'
+import { encodeAbi } from '@folktizen/netzjs/utils'
 
 const wallet = createWalletClient({
   chain: addEnsContracts(mainnet),
@@ -355,7 +355,7 @@ Sets an address record for a name on a resolver.
 ```ts
 import { createWalletClient, custom } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensWalletActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensWalletActions } from '@folktizen/netzjs'
 
 const wallet = createWalletClient({
   chain: addEnsContracts(mainnet),
@@ -393,7 +393,7 @@ Sets the fuses for a name as the parent.
 ```ts
 import { createWalletClient, custom } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensWalletActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensWalletActions } from '@folktizen/netzjs'
 
 const wallet = createWalletClient({
   chain: addEnsContracts(mainnet),
@@ -433,7 +433,7 @@ Sets the content hash record for a name on a resolver.
 ```ts
 import { createWalletClient, custom } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensWalletActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensWalletActions } from '@folktizen/netzjs'
 
 const wallet = createWalletClient({
   chain: addEnsContracts(mainnet),
@@ -471,7 +471,7 @@ Sets the fuses for a name.
 ```ts
 import { createWalletClient, custom } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensWalletActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensWalletActions } from '@folktizen/netzjs'
 
 const wallet = createWalletClient({
   chain: addEnsContracts(mainnet),
@@ -509,7 +509,7 @@ Sets a primary name for an address.
 ```ts
 import { createWalletClient, custom } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensWalletActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensWalletActions } from '@folktizen/netzjs'
 
 const wallet = createWalletClient({
   chain: addEnsContracts(mainnet),
@@ -544,7 +544,7 @@ Sets multiple records for a name on a resolver.
 ```ts
 import { createWalletClient, custom } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensWalletActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensWalletActions } from '@folktizen/netzjs'
 
 const wallet = createWalletClient({
   chain: addEnsContracts(mainnet),
@@ -587,7 +587,7 @@ Sets a resolver for a name.
 ```ts
 import { createWalletClient, custom } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensWalletActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensWalletActions } from '@folktizen/netzjs'
 
 const wallet = createWalletClient({
   chain: addEnsContracts(mainnet),
@@ -624,7 +624,7 @@ Sets a text record for a name on a resolver.
 ```ts
 import { createWalletClient, custom } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensWalletActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensWalletActions } from '@folktizen/netzjs'
 
 const wallet = createWalletClient({
   chain: addEnsContracts(mainnet),
@@ -662,7 +662,7 @@ Transfers a name to a new owner.
 ```ts
 import { createWalletClient, custom } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensWalletActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensWalletActions } from '@folktizen/netzjs'
 
 const wallet = createWalletClient({
   chain: addEnsContracts(mainnet),
@@ -699,7 +699,7 @@ Unwraps a name.
 ```ts
 import { createWalletClient, custom } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensWalletActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensWalletActions } from '@folktizen/netzjs'
 
 const wallet = createWalletClient({
   chain: addEnsContracts(mainnet),
@@ -742,7 +742,7 @@ Wraps a name.
 ```ts
 import { createWalletClient, custom } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensWalletActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensWalletActions } from '@folktizen/netzjs'
 
 const wallet = createWalletClient({
   chain: addEnsContracts(mainnet),

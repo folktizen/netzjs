@@ -1,4 +1,4 @@
-[**@ensdomains/ensjs**](../README.md)
+[**@folktizen/netzjs**](../README.md)
 
 ---
 
@@ -15,7 +15,7 @@ Extends the viem client with ENS subgraph actions
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensSubgraphActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensSubgraphActions } from '@folktizen/netzjs'
 
 const clientWithEns = createPublicClient({
   chain: addEnsContracts(mainnet),

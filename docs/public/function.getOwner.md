@@ -1,4 +1,4 @@
-[**@ensdomains/ensjs**](../README.md)
+[**@folktizen/netzjs**](../README.md)
 
 ---
 
@@ -15,8 +15,8 @@ Gets the owner(s) of a name.
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts } from '@ensdomains/ensjs'
-import { getOwner } from '@ensdomains/ensjs/public'
+import { addEnsContracts } from '@folktizen/netzjs'
+import { getOwner } from '@folktizen/netzjs/public'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),

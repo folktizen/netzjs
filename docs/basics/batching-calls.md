@@ -9,8 +9,8 @@ colliding with viem's native batching. If using batch outside of the client thou
 ```ts
 import { http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { createEnsPublicClient } from '@ensdomains/ensjs'
-import { getAddressRecord, getTextRecord } from '@ensdomains/ensjs/public'
+import { createEnsPublicClient } from '@folktizen/netzjs'
+import { getAddressRecord, getTextRecord } from '@folktizen/netzjs/public'
 
 const client = createEnsPublicClient({
   chain: mainnet,
@@ -38,12 +38,12 @@ const [ethAddress, twitterUsername] = client.ensBatch(
 ```ts
 import { http, createClient } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts } from '@ensdomains/ensjs'
+import { addEnsContracts } from '@folktizen/netzjs'
 import {
   batch,
   getAddressRecord,
   getTextRecord,
-} from '@ensdomains/ensjs/public'
+} from '@folktizen/netzjs/public'
 
 const client = createClient({
   chain: addEnsContracts(mainnet),

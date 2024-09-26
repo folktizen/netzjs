@@ -1,4 +1,4 @@
-[**@ensdomains/ensjs**](../README.md)
+[**@folktizen/netzjs**](../README.md)
 
 ---
 
@@ -15,7 +15,7 @@ Creates a ENS Public Client with a given [Transport](https://viem.sh/docs/client
 ```ts
 import { http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { createEnsPublicClient } from '@ensdomains/ensjs'
+import { createEnsPublicClient } from '@folktizen/netzjs'
 
 const client = createEnsPublicClient({
   chain: mainnet,
@@ -56,7 +56,7 @@ import {
   ensPublicActions,
   getTextRecord,
   getAddressRecord,
-} from '@ensdomains/ensjs'
+} from '@folktizen/netzjs'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -98,7 +98,7 @@ Gets the ABI record for a name
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensPublicActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensPublicActions } from '@folktizen/netzjs'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -131,7 +131,7 @@ Gets an address record for a name and specified coin
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensPublicActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensPublicActions } from '@folktizen/netzjs'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -164,7 +164,7 @@ Gets the availability of a name to register
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensPublicActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensPublicActions } from '@folktizen/netzjs'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -197,7 +197,7 @@ Gets the content hash record for a name
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensPublicActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensPublicActions } from '@folktizen/netzjs'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -230,7 +230,7 @@ Gets the full name for a name with unknown labels from the subgraph.
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensSubgraphActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensSubgraphActions } from '@folktizen/netzjs'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -265,7 +265,7 @@ Gets the expiry for a name
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensPublicActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensPublicActions } from '@folktizen/netzjs'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -298,7 +298,7 @@ Gets the primary name for an address
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensPublicActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensPublicActions } from '@folktizen/netzjs'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -333,7 +333,7 @@ Gets the history of a name from the subgraph.
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensSubgraphActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensSubgraphActions } from '@folktizen/netzjs'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -365,7 +365,7 @@ Gets the names for an address from the subgraph.
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensSubgraphActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensSubgraphActions } from '@folktizen/netzjs'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -399,7 +399,7 @@ Gets the owner(s) of a name.
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensPublicActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensPublicActions } from '@folktizen/netzjs'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -432,7 +432,7 @@ Gets the price of a name, or array of names, for a given duration.
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensPublicActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensPublicActions } from '@folktizen/netzjs'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -465,7 +465,7 @@ Gets arbitrary records for a name
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensPublicActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensPublicActions } from '@folktizen/netzjs'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -505,7 +505,7 @@ Gets the resolver address for a name.
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensPublicActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensPublicActions } from '@folktizen/netzjs'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -538,7 +538,7 @@ Gets the records for a name from the subgraph
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensSubgraphActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensSubgraphActions } from '@folktizen/netzjs'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -576,7 +576,7 @@ Gets the name registrant from the subgraph.
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensSubgraphActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensSubgraphActions } from '@folktizen/netzjs'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -609,7 +609,7 @@ Gets the subnames for a name from the subgraph.
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensSubgraphActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensSubgraphActions } from '@folktizen/netzjs'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -641,7 +641,7 @@ Gets a text record for a name.
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensPublicActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensPublicActions } from '@folktizen/netzjs'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -677,7 +677,7 @@ Gets the wrapper data for a name.
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensPublicActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensPublicActions } from '@folktizen/netzjs'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -709,7 +709,7 @@ Gets the full name for a name with unknown labels from the NameWrapper.
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensPublicActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensPublicActions } from '@folktizen/netzjs'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),

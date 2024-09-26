@@ -1,4 +1,4 @@
-[**@ensdomains/ensjs**](../README.md)
+[**@folktizen/netzjs**](../README.md)
 
 ---
 
@@ -15,9 +15,9 @@ Commits a name to be registered
 ```ts
 import { createWalletClient, custom } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts } from '@ensdomains/ensjs'
-import { commitName } from '@ensdomains/ensjs/wallet'
-import { randomSecret } from '@ensdomains/ensjs/utils'
+import { addEnsContracts } from '@folktizen/netzjs'
+import { commitName } from '@folktizen/netzjs/wallet'
+import { randomSecret } from '@folktizen/netzjs/utils'
 
 const wallet = createWalletClient({
   chain: addEnsContracts(mainnet),

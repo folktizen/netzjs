@@ -1,4 +1,4 @@
-[**@ensdomains/ensjs**](../README.md)
+[**@folktizen/netzjs**](../README.md)
 
 ---
 
@@ -15,8 +15,8 @@ Creates a subname
 ```ts
 import { createWalletClient, custom } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts } from '@ensdomains/ensjs'
-import { createSubname } from '@ensdomains/ensjs/wallet'
+import { addEnsContracts } from '@folktizen/netzjs'
+import { createSubname } from '@folktizen/netzjs/wallet'
 
 const wallet = createWalletClient({
   chain: addEnsContracts(mainnet),

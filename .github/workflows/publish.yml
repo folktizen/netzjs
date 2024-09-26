@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18]
+        node-version: [20.17.0]
     steps:
       - uses: actions/checkout@v4
         with:
@@ -20,7 +20,7 @@ jobs:
 
       - uses: pnpm/action-setup@v4
         with:
-          version: 9.4.0
+          version: 9.11.0
 
       - name: Install Node.js
         uses: actions/setup-node@v4
@@ -37,7 +37,7 @@ jobs:
 
       - name: Bump version to ${{ github.event.release.tag_name }}
         run: |
-          pnpm -F @ensdomains/ensjs ver ${{ github.event.release.tag_name }}
+          pnpm -F @folktizen/netzjs ver ${{ github.event.release.tag_name }}
           git add .
           git commit -m "${{ github.event.release.tag_name }}"
 
@@ -47,7 +47,7 @@ jobs:
           NPM_CONFIG_PROVENANCE: true
         run: |
           pnpm config set //registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}
-          pnpm -F @ensdomains/ensjs publish
+          pnpm -F @folktizen/netzjs publish
 
       - name: Push changes
         run: git push

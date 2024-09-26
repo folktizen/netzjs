@@ -6,7 +6,7 @@ When using subgraph data, it's also recommended to provide fallback records for 
 ```ts
 import { http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { createEnsPublicClient } from '@ensdomains/ensjs'
+import { createEnsPublicClient } from '@folktizen/netzjs'
 
 const client = createEnsPublicClient({
   chain: mainnet,

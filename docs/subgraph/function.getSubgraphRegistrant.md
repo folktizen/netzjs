@@ -1,4 +1,4 @@
-[**@ensdomains/ensjs**](../README.md)
+[**@folktizen/netzjs**](../README.md)
 
 ---
 
@@ -15,8 +15,8 @@ Gets the name registrant from the subgraph.
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts } from '@ensdomains/ensjs'
-import { getSubgraphRegistrant } from '@ensdomains/ensjs/subgraph'
+import { addEnsContracts } from '@folktizen/netzjs'
+import { getSubgraphRegistrant } from '@folktizen/netzjs/subgraph'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),

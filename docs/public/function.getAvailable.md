@@ -1,4 +1,4 @@
-[**@ensdomains/ensjs**](../README.md)
+[**@folktizen/netzjs**](../README.md)
 
 ---
 
@@ -15,8 +15,8 @@ Gets the availability of a name to register
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts } from '@ensdomains/ensjs'
-import { getAvailable } from '@ensdomains/ensjs/public'
+import { addEnsContracts } from '@folktizen/netzjs'
+import { getAvailable } from '@folktizen/netzjs/public'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -52,8 +52,8 @@ Gets the availability of a name to register
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts } from '@ensdomains/ensjs'
-import { getAvailable } from '@ensdomains/ensjs/public'
+import { addEnsContracts } from '@folktizen/netzjs'
+import { getAvailable } from '@folktizen/netzjs/public'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),

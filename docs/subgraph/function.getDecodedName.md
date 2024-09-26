@@ -1,4 +1,4 @@
-[**@ensdomains/ensjs**](../README.md)
+[**@folktizen/netzjs**](../README.md)
 
 ---
 
@@ -15,8 +15,8 @@ Gets the full name for a name with unknown labels from the subgraph.
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts } from '@ensdomains/ensjs'
-import { getDecodedName } from '@ensdomains/ensjs/subgraph'
+import { addEnsContracts } from '@folktizen/netzjs'
+import { getDecodedName } from '@folktizen/netzjs/subgraph'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),

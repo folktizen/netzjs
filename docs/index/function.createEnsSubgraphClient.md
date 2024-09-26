@@ -1,4 +1,4 @@
-[**@ensdomains/ensjs**](../README.md)
+[**@folktizen/netzjs**](../README.md)
 
 ---
 
@@ -15,7 +15,7 @@ Creates a ENS Subgraph Client with a given [Transport](https://viem.sh/docs/clie
 ```ts
 import { http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { createEnsSubgraphClient } from '@ensdomains/ensjs'
+import { createEnsSubgraphClient } from '@folktizen/netzjs'
 
 const client = createEnsSubgraphClient({
   chain: mainnet,
@@ -51,7 +51,7 @@ Gets the full name for a name with unknown labels from the subgraph.
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensSubgraphActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensSubgraphActions } from '@folktizen/netzjs'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -86,7 +86,7 @@ Gets the history of a name from the subgraph.
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensSubgraphActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensSubgraphActions } from '@folktizen/netzjs'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -118,7 +118,7 @@ Gets the names for an address from the subgraph.
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensSubgraphActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensSubgraphActions } from '@folktizen/netzjs'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -152,7 +152,7 @@ Gets the records for a name from the subgraph
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensSubgraphActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensSubgraphActions } from '@folktizen/netzjs'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -190,7 +190,7 @@ Gets the name registrant from the subgraph.
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensSubgraphActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensSubgraphActions } from '@folktizen/netzjs'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),
@@ -223,7 +223,7 @@ Gets the subnames for a name from the subgraph.
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts, ensSubgraphActions } from '@ensdomains/ensjs'
+import { addEnsContracts, ensSubgraphActions } from '@folktizen/netzjs'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),

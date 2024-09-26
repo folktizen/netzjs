@@ -1,4 +1,4 @@
-[**@ensdomains/ensjs**](../README.md)
+[**@folktizen/netzjs**](../README.md)
 
 ---
 
@@ -15,8 +15,8 @@ Sets the fuses for a name as the parent.
 ```ts
 import { createWalletClient, custom } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts } from '@ensdomains/ensjs'
-import { setChildFuses } from '@ensdomains/ensjs/wallet'
+import { addEnsContracts } from '@folktizen/netzjs'
+import { setChildFuses } from '@folktizen/netzjs/wallet'
 
 const wallet = createWalletClient({
   chain: addEnsContracts(mainnet),

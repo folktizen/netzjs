@@ -1,4 +1,4 @@
-[**@ensdomains/ensjs**](../README.md)
+[**@folktizen/netzjs**](../README.md)
 
 ---
 
@@ -15,9 +15,9 @@ Renews a name or names for a specified duration.
 ```ts
 import { createPublicClient, createWalletClient, http, custom } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts } from '@ensdomains/ensjs'
-import { getPrice } from '@ensdomains/ensjs/public'
-import { renewNames } from '@ensdomains/ensjs/wallet'
+import { addEnsContracts } from '@folktizen/netzjs'
+import { getPrice } from '@folktizen/netzjs/public'
+import { renewNames } from '@folktizen/netzjs/wallet'
 
 const mainnetWithEns = addEnsContracts(mainnet)
 const client = createPublicClient({

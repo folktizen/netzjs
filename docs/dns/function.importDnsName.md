@@ -1,4 +1,4 @@
-[**@ensdomains/ensjs**](../README.md)
+[**@folktizen/netzjs**](../README.md)
 
 ---
 
@@ -15,8 +15,8 @@ Creates a transaction to import a DNS name to ENS.
 ```ts
 import { createPublicClient, createWalletClient, http, custom } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts } from '@ensdomains/ensjs'
-import { getDnsImportData, importDnsName } from '@ensdomains/ensjs/dns'
+import { addEnsContracts } from '@folktizen/netzjs'
+import { getDnsImportData, importDnsName } from '@folktizen/netzjs/dns'
 
 const mainnetWithEns = addEnsContracts(mainnet)
 const client = createPublicClient({

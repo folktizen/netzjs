@@ -1,4 +1,4 @@
-[**@ensdomains/ensjs**](../README.md)
+[**@folktizen/netzjs**](../README.md)
 
 ---
 
@@ -15,8 +15,8 @@ Gets the subnames for a name from the subgraph.
 ```ts
 import { createPublicClient, http } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts } from '@ensdomains/ensjs'
-import { getSubnames } from '@ensdomains/ensjs/subgraph'
+import { addEnsContracts } from '@folktizen/netzjs'
+import { getSubnames } from '@folktizen/netzjs/subgraph'
 
 const client = createPublicClient({
   chain: addEnsContracts(mainnet),

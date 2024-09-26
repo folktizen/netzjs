@@ -1,4 +1,4 @@
-[**@ensdomains/ensjs**](../README.md)
+[**@folktizen/netzjs**](../README.md)
 
 ---
 
@@ -15,10 +15,10 @@ Registers a name on ENS
 ```ts
 import { createPublicClient, createWalletClient, http, custom } from 'viem'
 import { mainnet } from 'viem/chains'
-import { addEnsContracts } from '@ensdomains/ensjs'
-import { getPrice } from '@ensdomains/ensjs/public'
-import { randomSecret } from '@ensdomains/ensjs/utils'
-import { commitName, registerName } from '@ensdomains/ensjs/wallet'
+import { addEnsContracts } from '@folktizen/netzjs'
+import { getPrice } from '@folktizen/netzjs/public'
+import { randomSecret } from '@folktizen/netzjs/utils'
+import { commitName, registerName } from '@folktizen/netzjs/wallet'
 
 const mainnetWithEns = addEnsContracts(mainnet)
 const client = createPublicClient({
