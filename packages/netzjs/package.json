@@ -1,7 +1,7 @@
 {
   "name": "@folktizen/netzjs",
   "version": "0.0.1",
-  "description": "ENS javascript library for contract interaction",
+  "description": "Netizen Bio javascript library for contract interaction (ENS Clone)",
   "type": "module",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
